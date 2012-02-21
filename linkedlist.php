@@ -3,7 +3,7 @@
  * A PHP Single Linked List Example
  */
 
-class linknode{
+class linkNode{
 
     //Data that the node holds
     public $data;
@@ -141,16 +141,5 @@ class linkedList{
         }
         return $string;
     }
-
-
 }
-$testlist = new linkedList;
-$testlist->insertFirst(', and not to yield');
-$testlist->insertFirst(', to find');
-$testlist->insertFirst(', to seek');
-$testlist->insertFirst('To strive');
-$testlist->insertAfter(2, ', to do something else');
-$testlist->deleteAfter(2);
-echo $testlist;
-echo is_null($testlist->findNode('that which cannot be found'));
 ?>
